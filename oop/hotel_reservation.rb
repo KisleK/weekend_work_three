@@ -32,3 +32,51 @@ end
 # The add_a_crib method
 # The add_a_custom_amenity method
 
+puts "Testing hotel Reservation"
+
+
+reservation = HotelReservation.new({customer_name: "Kyle", date: "5/14/2017", room_number: "502"})
+
+puts "Testing add_a_crib"
+results = reservation.add_a_crib
+puts "Your method returned......."
+
+p results
+
+if reservation.amenities.include?("crib")
+  puts "Pass"
+else
+  puts "Not Quite"
+end
+
+
+puts "Testing add_a_fridge"
+results = reservation.add_a_fridge
+puts "Your method returned......."
+
+p results
+
+if reservation.amenities.include?("fridge")
+  puts "Pass!"
+else 
+  puts "Not quite"
+end
+
+puts "Testing add_a_custom_amenity..."
+results = reservation.add_a_custom_amenity("Couch")
+puts "Your Method returned...."
+if reservation.add_a_custom_amenity.amenities.include?("Couch")
+  puts "Pass"
+else
+  puts "Nope!"
+end
+
+
+
+
+# reservation.add_a_fridge
+# p reservation
+# reservation.add_a_custom_amenity("Couch")
+# p reservation
+
+
