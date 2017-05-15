@@ -66,6 +66,9 @@ puts "Testing add_a_custom_amenity..."
 results = reservation.add_a_custom_amenity("Couch")
 puts "Your Method returned...."
 if reservation.add_a_custom_amenity.amenities.include?("Couch")
+
+  #stuck here
+  
   puts "Pass"
 else
   puts "Nope!"
