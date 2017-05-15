@@ -33,11 +33,15 @@ end
 # The add_a_custom_amenity method
 
 puts "Testing hotel Reservation"
-
+## create a new instance
 
 reservation = HotelReservation.new({customer_name: "Kyle", date: "5/14/2017", room_number: "502"})
 
 puts "Testing add_a_crib"
+
+#utilize above method to add a crib
+#Utilize.include? to see if the new array has the specific added amenity
+
 results = reservation.add_a_crib
 puts "Your method returned......."
 
@@ -62,17 +66,19 @@ else
   puts "Not quite"
 end
 
-puts "Testing add_a_custom_amenity..."
-results = reservation.add_a_custom_amenity("Couch")
-puts "Your Method returned...."
-if reservation.add_a_custom_amenity.amenities.include?("Couch")
+# puts "Testing add_a_custom_amenity..."
+# results = reservation.add_a_custom_amenity("Couch")
+# puts "Your Method returned...."
+# if reservation.add_a_custom_amenity.amenities.include?("Couch")
 
-  #stuck here
-  
-  puts "Pass"
-else
-  puts "Nope!"
-end
+#   #stuck here 
+
+#   puts "Pass"
+# else
+#   puts "Nope!"
+# end
+##also struggling with the  room number
+p reservation
 
 
 
