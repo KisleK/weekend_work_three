@@ -67,16 +67,19 @@ else
 end
 
 # puts "Testing add_a_custom_amenity..."
-# results = reservation.add_a_custom_amenity("Couch")
-# puts "Your Method returned...."
-# if reservation.add_a_custom_amenity.amenities.include?("Couch")
+results = reservation.add_a_custom_amenity("Couch")
+puts "Your Method returned...."
 
-#   #stuck here 
+p results
 
-#   puts "Pass"
-# else
-#   puts "Nope!"
-# end
+if reservation.add_a_custom_amenity.amenities.include?("Couch")
+
+  #stuck here 
+
+  puts "Pass"
+else
+  puts "Nope!"
+end
 ##also struggling with the  room number
 p reservation
 
